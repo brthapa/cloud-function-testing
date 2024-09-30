@@ -14,6 +14,9 @@ steps:
       - "--entry-point"
       - "helloWorld"
       - "--runtime"
-      - "nodejs16" # or the appropriate runtime version
+      - "nodejs16"
       - "--trigger-http"
-      - "--allow-unauthenticated" # Optional, allows unauthenticated access
+      - "--allow-unauthenticated"
+
+options:
+  logging: CLOUD_LOGGING_ONLY
