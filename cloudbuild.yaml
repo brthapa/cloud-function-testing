@@ -1,23 +1,19 @@
 steps:
   # Step 1: Build the function
-  - name: 'gcr.io/cloud-builders/npm'
-    entrypoint: 'bash'
-    args: ['-c', 'npm install']
+  - name: "gcr.io/cloud-builders/npm"
+    entrypoint: "bash"
+    args: ["-c", "npm install"]
 
   # Step 2: Deploy the function
-  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  - name: "gcr.io/google.com/cloudsdktool/cloud-sdk"
     args:
-      - 'gcloud'
-      - 'functions'
-      - 'deploy'
-      - 'helloWorld'
-      - '--entry-point'
-      - 'helloWorld'
-      - '--runtime'
-      - 'nodejs16' # or the appropriate runtime version
-      - '--trigger-http'
-      - '--allow-unauthenticated' # Optional, allows unauthenticated access
-
-# Optional: Specify images to be pushed after the build is complete
-images:
-  - 'gcr.io/$PROJECT_ID/hello-world-function'
+      - "gcloud"
+      - "functions"
+      - "deploy"
+      - "helloWorld"
+      - "--entry-point"
+      - "helloWorld"
+      - "--runtime"
+      - "nodejs16" # or the appropriate runtime version
+      - "--trigger-http"
+      - "--allow-unauthenticated" # Optional, allows unauthenticated access
