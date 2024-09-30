@@ -17,6 +17,7 @@ steps:
       - "nodejs16"
       - "--trigger-http"
       - "--allow-unauthenticated"
+      - "--verbosity=debug"
 
 options:
   logging: CLOUD_LOGGING_ONLY
