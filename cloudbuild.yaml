@@ -10,7 +10,7 @@ steps:
       - "gcloud"
       - "functions"
       - "deploy"
-      - "helloWorld"
+      - "function-3"
       - "--entry-point"
       - "helloWorld"
       - "--runtime"
