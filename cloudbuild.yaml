@@ -15,8 +15,6 @@ steps:
       - "beforeCreate"
       - "--runtime"
       - "nodejs18"
-      - "--trigger-http"
-      - "--allow-unauthenticated"
 
 options:
   logging: CLOUD_LOGGING_ONLY
