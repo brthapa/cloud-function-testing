@@ -14,7 +14,7 @@ steps:
       - "--entry-point"
       - "helloWorld"
       - "--runtime"
-      - "nodejs16"
+      - "nodejs18"
       - "--trigger-http"
       - "--allow-unauthenticated"
 

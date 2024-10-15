@@ -1,6 +1,8 @@
 {
-  "name": "helloworld-function",
+  "name": "before-user-create-function",
   "version": "1.0.0",
   "main": "index.js",
-  "dependencies": {}
+  "dependencies": {
+    "firebase-functions": "^6.0.1"
+  }
 }
