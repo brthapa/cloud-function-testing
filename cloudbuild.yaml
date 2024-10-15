@@ -12,7 +12,7 @@ steps:
       - "deploy"
       - "function-3"
       - "--entry-point"
-      - "helloWorld"
+      - "beforeCreate"
       - "--runtime"
       - "nodejs18"
       - "--trigger-http"
