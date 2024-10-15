@@ -1,7 +1,7 @@
-const functions = require("firebase-functions");
+const functions = require('firebase-functions/v1');
 
-const beforeCreate = functions.auth.user().beforeCreate(async (user) => {
-  const uid = user.uid;
+exports.beforeCreate = functions.auth.user().beforeCreate((event) => {
+  const uid = event.data.uid;  // Access the user data from the event object
   console.log("uid--->", uid);
   return {
     uid: uid,
